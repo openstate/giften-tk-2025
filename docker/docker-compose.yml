@@ -1,0 +1,13 @@
+version: "3.1"
+services:
+   giften_tk_2025:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ../:/opt/giften_tk_2025
+    networks:
+      - giften_tk_2025
+    restart: always
+networks:
+  giften_tk_2025:
